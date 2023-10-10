@@ -18,9 +18,9 @@ if len(sys.argv) == 1:
         "scheduler_step": 10,
         "scheduler_gamma": 0.98,
         "epochs": 500,
-        "batch_size": 16,
+        "batch_size": 2, #16
         "exp": 1, #Do we use L1 or L2 errors? Default: L1
-        "training_samples": 256, #How many training samples?
+        "training_samples": 256, #How many training samples? #256
     }
     model_architecture_ = {
        
@@ -66,7 +66,7 @@ if len(sys.argv) == 1:
     #   airfoil             : Compressible Euler equations
     
 
-    which_example = "airfoil"
+    which_example = "poisson"
 
     # Save the models here:
     folder = "TrainedModels/"+"CNO_"+which_example
